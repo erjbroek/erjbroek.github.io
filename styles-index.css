@@ -1,55 +1,106 @@
 .navigatie li {
     display: inline;
+    width: 600px;
 }
+
 
 .navigatie a {
     display: block;
     display: inline;
-    width: 80px;
-    padding: 20px;
-    position: relative;
+    width: 500px;
     top: 17px;
-    right: 12%;
+    right: 100px;
     color: black;
     text-decoration: none;
     font-family: helvetica, sans-serif, Arial;
+    position: relative;
+    padding: 10px 20px;
+    margin-left: 20px;
 }
 .navigatie ul {
     height: 50px;
-    
+    width: 600px;
+    position: relative;
+    right: -450px;  
 }
 
 .navigatie li a:hover {
     background-color: #6cff99;
     border-radius: 20px;
 }
-body {
+.navigatie menu, .navigatie {
     text-align: center;
+
 }
 .aside-menu {
   width: 400px;
   height: 100vw;
   background: lightgrey;  
   position: relative;
-  top: -160px;
+  bottom: 800px;
   left: -2%;
+  float: left;
+  margin: 0; 
 }
+
 .aside-menu-header {
     position: relative;
     text-align: center;
-    bottom: -50px;
+    bottom: -70px;
 }
 
 .aside-menu-items {
     text-decoration: none;
+
 }
 
 .items {
     position: relative;
-    top: 60px;
+    top: 80px;
     padding: 20px;
+    width: 320px;
+    text-align: left;
     list-style: none;
+    float: left;
+    border-radius:30px 0px 0px 30px;
 }
+
+.items:hover {
+    background-color: #6cff99;
+}
+
+.items:hover a {
+    color:black;
+}
+
 .items a {
     text-decoration: none;
+    font-family: helvetica, sans-serif, Arial;
 }
+
+.navigatie li a:hover:not(.active) {
+    background-color:#6cff99;
+    border-radius: 20px;
+  }
+  
+  .active {
+    background-color: #6cff99;
+    border-radius: 20px;
+  }
+  
+.wie_titel {
+    text-align: center;  
+    width: 200px; 
+    position: relative;
+    left: 500px;
+    font-family: helvetica, sans-serif, Arial;
+    font-size: 200%
+}
+
+.persoonlijke_gegevens {
+    position: relative;
+    left: 500px;
+    font-family: helvetica, sans-serif, Arial;
+}
+
+
