@@ -1,0 +1,55 @@
+.navigatie li {
+    display: inline;
+}
+
+.navigatie a {
+    display: block;
+    display: inline;
+    width: 80px;
+    padding: 20px;
+    position: relative;
+    top: 17px;
+    right: 12%;
+    color: black;
+    text-decoration: none;
+    font-family: helvetica, sans-serif, Arial;
+}
+.navigatie ul {
+    height: 50px;
+    
+}
+
+.navigatie li a:hover {
+    background-color: #6cff99;
+    border-radius: 20px;
+}
+body {
+    text-align: center;
+}
+.aside-menu {
+  width: 400px;
+  height: 100vw;
+  background: lightgrey;  
+  position: relative;
+  top: -160px;
+  left: -2%;
+}
+.aside-menu-header {
+    position: relative;
+    text-align: center;
+    bottom: -50px;
+}
+
+.aside-menu-items {
+    text-decoration: none;
+}
+
+.items {
+    position: relative;
+    top: 60px;
+    padding: 20px;
+    list-style: none;
+}
+.items a {
+    text-decoration: none;
+}
