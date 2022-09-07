@@ -3,7 +3,9 @@
     width: 600px;
 }
 
-
+body {
+    font-family: helvetica, sans-serif, Arial;
+}
 .navigatie a {
     display: block;
     display: inline;
@@ -36,9 +38,9 @@
   width: 400px;
   height: 100vw;
   background: lightgrey;  
-  position: relative;
-  bottom: 800px;
-  left: -2%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   float: left;
   margin: 0; 
 }
@@ -75,7 +77,6 @@
 
 .items a {
     text-decoration: none;
-    font-family: helvetica, sans-serif, Arial;
 }
 
 .navigatie li a:hover:not(.active) {
@@ -89,18 +90,36 @@
   }
   
 .wie_titel {
-    text-align: center;  
-    width: 200px; 
-    position: relative;
-    left: 500px;
-    font-family: helvetica, sans-serif, Arial;
-    font-size: 200%
+    text-align: center;   
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    width: 200px;
+    font-size: 200%;
+
 }
 
 .persoonlijke_gegevens {
-    position: relative;
-    left: 500px;
-    font-family: helvetica, sans-serif, Arial;
+    position: absolute;
+    top: 350px;
+    left: 450px;
 }
+
+.artikel_hoofd {
+    font-size: 150%;
+
+}
+.explanation {
+    font-size: 80%;
+}
+
+.uitleg_studiekeuze {
+    font-size: 80%
+}
+ .de_FAQ, .Dashboard_Titel, .Blog_Stuk {
+    font-size: 200%;
+ }
+
+
 
 
