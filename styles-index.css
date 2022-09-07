@@ -94,30 +94,59 @@ body {
     position: absolute;
     top: 100px;
     left: 450px;
-    width: 200px;
+    width: 350px;
     font-size: 200%;
 
 }
 
 .persoonlijke_gegevens {
     position: absolute;
-    top: 350px;
-    left: 450px;
+    top: 250px;
+    left: 500px;
 }
 
 .artikel_hoofd {
     font-size: 150%;
+    position: absolute;
+    top: 250px;
+    right: 200px;
 
 }
 .explanation {
     font-size: 80%;
+    position: absolute;
+    top: 100px;
+    right: 450px;
 }
 
 .uitleg_studiekeuze {
     font-size: 80%
 }
- .de_FAQ, .Dashboard_Titel, .Blog_Stuk {
+
+ .de_FAQ, .Dashboard_Titel, .Blog_stuk {
     font-size: 200%;
+ }
+
+ .Blog_stuk {
+    position: absolute;
+    left: 450px;
+
+ }
+
+    .studiekeuze {
+        position: absolute;
+        top: 300px;
+     }
+
+ 
+ .de_FAQ {
+    position: absolute;
+    right: 200px;
+ }
+ .Vragen_antwoorden {
+    position: absolute;
+    right: 350px;
+    top: 250px;
  }
 
 
