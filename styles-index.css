@@ -1,3 +1,15 @@
+
+/*body*/
+
+body {
+    font-family: helvetica, sans-serif, Arial;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+/*navigatie */
+
 .navigatie li {
     display: inline;
     width: 600px;
@@ -10,10 +22,6 @@
     background-color:rgba(126, 233, 182, 0.4);
 }
 
-body {
-    font-family: helvetica, sans-serif, Arial;
-    margin-top: 50px;
-}
 .navigatie a {
     display: block;
     display: inline;
@@ -42,10 +50,12 @@ body {
     text-align: center;
 
 }
+
+/*aside menu*/
 .aside-menu {
   width: 400px;
   height: 100vw;
-  background: rgba(211, 211, 211, 0.5);  
+  background: black;  
   position: absolute;
   right: 0;
   top: 0px;
@@ -58,10 +68,12 @@ body {
     text-align: center;
     bottom: -70px;
 }
+.aside-menu a {
+    color: white;
+}
 
 .aside-menu-items {
     text-decoration: none;
-
 }
 
 .items {
@@ -72,7 +84,8 @@ body {
     text-align: left;
     list-style: none;
     float: left;
-    border-radius:30px 0px 0px 30px;
+    border-radius:0px 30px 30px 0px;
+    left: -40px;
 }
 
 .items:hover {
@@ -183,14 +196,19 @@ body {
     position: absolute;
     right: 700px;
     margin-left: 300px;
+    top: 100px;
  }
  .Vragen_antwoorden {
     position: absolute;
     right: 700px;
     top: 250px;
     margin-left: 350px;
+    top: 300px;
  }
 
+ .Corona_link {
+    color: white;
+ }
 
 
 
