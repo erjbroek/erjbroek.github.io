@@ -2,9 +2,16 @@
     display: inline;
     width: 600px;
 }
+.navigatie {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
 
 body {
     font-family: helvetica, sans-serif, Arial;
+    margin-top: 50px;
 }
 .navigatie a {
     display: block;
@@ -37,7 +44,7 @@ body {
 .aside-menu {
   width: 400px;
   height: 100vw;
-  background: lightgrey;  
+  background: rgba(211, 211, 211, 0.5);  
   position: absolute;
   left: 0px;
   top: 0px;
@@ -101,8 +108,35 @@ body {
 
 .persoonlijke_gegevens {
     position: absolute;
-    top: 250px;
+    top: 350px;
     left: 500px;
+    background-color:rgba(211, 211, 211, 0.5);
+    padding: 25px;
+    width: 414px;
+    height: 260px;
+}
+
+.persoonlijke_gegevens h2 {
+    font-size: 200%;
+    margin: 0;
+}
+.Mijn_Hobbies {
+    position: absolute;
+    top: 350px;
+    left: 1100px;
+    background-color:rgba(211, 211, 211, 0.5);
+    padding: 25px;
+    width: 414px;
+    height: 260px;
+}
+.Mijn_Hobbies h2 {
+    font-size: 300%;
+    bottom: 500px;
+    margin: 0;
+}
+
+.Mijn_Hobbies h3 {
+    font-size: 200%;
 }
 
 .artikel_hoofd {
@@ -126,10 +160,16 @@ body {
  .de_FAQ, .Dashboard_Titel, .Blog_stuk {
     font-size: 200%;
  }
+ .Dashboard_Titel {
+    position: absolute;
+    top: 100px;
+    left: 470px;
+
+ }
 
  .Blog_stuk {
     position: absolute;
-    left: 450px;
+    left: 500px;
 
  }
 
@@ -142,11 +182,13 @@ body {
  .de_FAQ {
     position: absolute;
     right: 200px;
+    margin-left: 500px;
  }
  .Vragen_antwoorden {
     position: absolute;
     right: 350px;
     top: 250px;
+    margin-left: 550px;
  }
 
 
