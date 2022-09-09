@@ -10,106 +10,67 @@ body {
 
 /*navigatie */
 
-.navigatie li {
+.navigatie_menu li {
     display: inline;
     width: 600px;
+    margin: 0 0;
 }
-.navigatie {
+.navigatie_menu {
     position:fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    height: 300px;
     z-index: 10;
-    background-color:rgba(126, 233, 182, 0.4);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 29%, rgba(255,255,255,0) 100%);
+    margin: 0, 0;
 }
 
-.navigatie a {
+.navigatie_menu a {
     display: block;
     display: inline;
     width: 500px;
     top: 17px;
     right: 100px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: helvetica, sans-serif, Arial;
     position: relative;
     padding: 10px 20px;
     margin-left: 20px;
 }
-.navigatie ul {
+.navigatie_menu ul {
     height: 50px;
     width: 600px;
     position: relative;
-    right: -450px;  
+    margin: 0 0;
+    left: 100px;
+    margin-top: 50px;
 }
 
-.navigatie li a:hover {
+.navigatie_menu li a:hover {
     background-color: #6cff99;
     border-radius: 20px;
 }
-.navigatie menu, .navigatie {
+.navigati_menu, .navigatie {
     text-align: center;
 
 }
 
-/*aside menu*/
-.aside-menu {
-  width: 400px;
-  height: 100vw;
-  background: black;  
-  position: absolute;
-  right: 0;
-  top: 0px;
-  float: right;
-  margin: 0; 
-}
+.navigatie_menu a:hover:not(.active) {
+    background-color:#6cff99;
+    border-radius: 20px;
+    color: black;
+  }
 
-.aside-menu-header {
-    position: relative;
-    text-align: center;
-    bottom: -70px;
-}
-.aside-menu a {
-    color: white;
-}
-
-.aside-menu-items {
-    text-decoration: none;
-}
-
-.items {
-    position: relative;
-    top: 80px;
-    padding: 20px;
-    width: 320px;
-    text-align: left;
-    list-style: none;
-    float: left;
-    border-radius:0px 30px 30px 0px;
-    left: -40px;
-}
-
-.items:hover {
-    background-color: #6cff99;
-}
-
-.items:hover a {
-    color:black;
-}
-
-.items a {
-    text-decoration: none;
-}
-
-.navigatie li a:hover:not(.active) {
+  .active {
     background-color:#6cff99;
     border-radius: 20px;
   }
-  
-  .active {
-    background-color: #6cff99;
-    border-radius: 20px;
-  }
-  
+
+/*aside menu*/
+
 .wie_titel {
     text-align: center;   
     position: absolute;
@@ -117,7 +78,6 @@ body {
     top: 100px;
     left: 300px;
     font-size: 200%;
-
 }
 
 .persoonlijke_gegevens {
@@ -193,21 +153,34 @@ body {
 
  
  .de_FAQ {
-    position: absolute;
-    right: 700px;
-    margin-left: 300px;
-    top: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    max-width: 600px;
+    font-size: 400%;
+ }
+
+ .FaQ1 {
+    margin-left: auto;
+    margin-right: auto;
  }
  .Vragen_antwoorden {
     position: absolute;
-    right: 700px;
-    top: 250px;
-    margin-left: 350px;
-    top: 300px;
+    top: 400px;
+    max-width: 500px;
+    left: 500px;
  }
 
  .Corona_link {
     color: white;
+ }
+
+ #AchtergrondVideo{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
  }
 
 
