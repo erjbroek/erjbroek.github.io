@@ -22,10 +22,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 100px;
   z-index: 10;
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 7%, rgba(255, 255, 255, 0) 59%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 43%, rgba(255, 255, 255, 0) 100%);
   margin: 0, 0;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .active {
-  background-color: #6cff99;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
   border-radius: 20px;
   border: 10px;
   border-color: white;
@@ -88,50 +88,106 @@ body {
   border-top: grey solid 2px;
 }
 
+.Zwart-wit {
+  position: relative;
+  bottom: 450px;
+  width: 100%;
+  height: 350px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(156, 156, 156, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
+}
+
+.Wit-wit {
+  position: relative;
+  background-color: white;
+  color: white;
+  height: 900px;
+  width: 100%;
+  bottom: 475px;
+}
+
+.Wit-zwart {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 350px;
+  position: relative;
+  bottom: -300px;
+  width: 100%;
+}
 
 
-.wie_titel {
+.Wie {
+  position: relative;
+  top: -600px;
+  color: white;
+
+}
+
+.Wie-ben {
+  font-size: 700%;
   text-align: center;
+  top: -900px;
+  position: relative;
+}
+
+.Hobbies {
+  color: red;
+}
+
+
+.Tekening,
+.Diablo,
+.sombrerofoto {
+  width: 320px;
+  height: auto;
+}
+
+.Diablo {
+  height: 43%;
+}
+
+.Tekening {
+  height: 43%;
+}
+
+
+.Blok123 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1040px;
+}
+
+.blok1, .blok2, .blok3 {
+  width: 320px;
+  height: 300px;
+  background-color:#f1faed;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  display: inline-block;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.FotoNaarTekst {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
-  width: 350px;
-  top: 100px;
-  left: 300px;
-  font-size: 200%;
+  width: 100%;
+  height: 350px;
+  top: 520px;
 }
 
-.persoonlijke_gegevens {
-  position: absolute;
-  top: 300px;
-  background-color: rgba(211, 211, 211, 0.5);
-  padding: 25px;
-  width: 414px;
-  height: 260px;
+.ZwartVlak {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  height: 300px;
+  top: 85%;
+  position: relative;
 }
 
-.persoonlijke_gegevens h2 {
-  font-size: 200%;
-  margin: 0;
-}
 
-.Mijn_Hobbies {
-  position: absolute;
-  top: 300px;
-  left: 600px;
-  background-color: rgba(211, 211, 211, 0.5);
-  padding: 25px;
-  width: 414px;
-  height: 260px;
-}
-
-.Mijn_Hobbies h2 {
-  font-size: 300%;
-  bottom: 500px;
-  margin: 0;
-}
-
-.Mijn_Hobbies h3 {
-  font-size: 200%;
-}
 
 .artikel_hoofd {
   font-size: 150%;
@@ -350,23 +406,7 @@ body {
   opacity: 0.4;
 }
 
-.FotoNaarTekst {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 100%);
-  position: absolute;
-  width: 100%;
-  height: 350px;
-  top: 520px;
-}
 
-.ZwartVlak {
-  width: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  height: 300px;
-  top: 85%;
-  position: relative;
-}
 
 /*Dashboard tabel */
 
@@ -435,10 +475,10 @@ body {
   margin-right: auto;
 }
 
-.NBSA > h1 {
+.NBSA>h1 {
   font-size: 300%;
 }
 
-.NBSA > p {
+.NBSA>p {
   font-size: 150%;
 }
