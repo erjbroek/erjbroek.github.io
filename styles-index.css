@@ -88,23 +88,40 @@ body {
   border-top: grey solid 2px;
 }
 
-.Zwart-wit {
-  position: relative;
-  bottom: 421px;
-  width: 100%;
-  height: 350px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(156, 156, 156, 1) 50%, rgba(255, 255, 255, 1) 100%);
 
+/* Index */
+
+.Foto-Mezelf {
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+
+.TitelHome {
+  font-size: 700%;
+  text-align: center;
+  position: relative;
+  top: -900px;
+}
+
+
+
+
+.vorm-voor-foto {
+  border-radius: 77% 23% 79% 21% / 53% 75% 25% 47% ;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
 
 .Wit-wit {
   position: relative;
   background-color: white;
   color: white;
-  height: 900px;
+  height: 100%;
   width: 100%;
-  bottom: 475px;
+  top: 0px;
 }
 
 .Wit-zwart {
@@ -130,7 +147,7 @@ body {
   color: white;
   position: relative;
   text-align: center;
-  top: -330px;
+  top: -500px;
   padding: 30px;
 }
 
@@ -191,14 +208,7 @@ body {
   top: 520px;
 }
 
-.ZwartVlak {
-  width: 100%;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  height: 300px;
-  top: 85%;
-  position: relative;
-}
+
 
 
 
@@ -222,23 +232,45 @@ body {
 }
 
 .de_FAQ,
-.Dashboard_Titel,
+.DashboardTitel,
 .Blog_stuk {
-  font-size: 200%;
+  font-size: 400%;
 }
 
-.Dashboard_Titel {
-  position: absolute;
+.DashboardTitel {
+  font-size: 700%;
+  color: white;
+  position: relative;
+  text-align: center;
+  top: -700px;
+  padding: 30px;
+}
+
+
+
+.Blog_stuk {
+  position: relative;
+  text-align: center;
+  top: -600px;
+
+}
+
+.BlogBlok1,
+.BlogBlok2,
+.BlogBlok3,
+.BlogBlok4 {
+  position: relative;
+  width: 400px;
+  height: auto;
+  display: inline-block;
+
+}
+
+.BlogBlokken {
+  max-width: 900px;
   top: 100px;
-  left: 470px;
-
 }
 
-.Blog_stuk {
-  position: absolute;
-  left: 500px;
-
-}
 
 .studiekeuze {
   position: absolute;
@@ -260,7 +292,7 @@ body {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  top: -400px;
+  top: 0px;
   position: relative;
   height: 300px;
 }
@@ -438,13 +470,7 @@ body {
   border: 1px solid white;
 }
 
-.DashboardTitel {
-  font-size: 700%;
-  color: white;
-  position: relative;
-  top: -950px;
-  text-align: center;
-}
+
 
 .Kwartaal {
   Color: white;
