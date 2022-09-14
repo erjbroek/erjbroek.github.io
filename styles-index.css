@@ -83,18 +83,63 @@ body {
   background-color: black;
   width: 100%;
   height: 250px;
-  bottom: -100px;
-  position: relative;
+  vertical-align: baseline;
+  position: absolute;
   border-top: grey solid 2px;
   text-align: center;
+  vertical-align: bottom;
 }
 
-.bottommenu>ul {
+.bottommenudashboard {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+  bottom: -900px;
+}
+
+.bottommenuprofile {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+  bottom: 200px;
+} 
+
+.bottommenublog {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+  bottom: -2200px;
+}
+
+
+
+ul .bottommenu,
+ul .bottommenudashboard,
+ul .bottommenuprofile,
+ul .bottommenublog {
   color: black;
 
 }
 
-.bottommenu li {
+.bottommenu li,
+.bottommenudashboard li,
+.bottommenuprofile li,
+.bottommenublog li {
   margin-top: 20px;
   color: black;
   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
@@ -108,7 +153,10 @@ body {
   margin-right: 20px;
 }
 
-.bottommenu a {
+.bottommenu a,
+.bottommenudashboard a,
+.bottommenuprofile a,
+.bottommenublog a {
   color: black;
   text-decoration: none;
   padding: 10px;
@@ -266,17 +314,16 @@ body {
   background-color: black;
   height: 633px;
 }
+
 .Hobbies>h1 {
   color: black;
   font-size: 500%;
   position: relative;
 }
 
-.Schaatsfoto {
+.Hobbies .almijnhobbies {
   position: relative;
-  top: -1100px;
-  width: 100%;
-  height: auto;
+  top: 100px;
 }
 
 .Tekening,
@@ -295,6 +342,26 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1160px;
+  position: relative;
+  top: -550px;
+}
+
+.dividor-hobbies {
+  width: 90%;
+  height: 3px;
+  background-color: grey;
+  margin: auto;
+  position: relative;
+  top: -640px;
+
+}
+
+.TitelHobbies {
+  font-size: 400%;
+  color: white;
+  text-align: center;
+  top: -620px;
+  position: relative;
 }
 
 .blok1,
@@ -316,19 +383,20 @@ body {
 }
 
 .blok1 {
-  background: rgb(0,201,255);
-background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 100%, rgba(100,237,188,1) 100%, rgba(146,254,157,1) 100%);
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(51, 220, 220, 1) 100%, rgba(100, 237, 188, 1) 100%, rgba(146, 254, 157, 1) 100%);
 }
 
 .blok2 {
-  background: rgb(0,201,255);
-background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, rgba(100,237,188,1) 100%, rgba(146,254,157,1) 100%);
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(51, 220, 220, 1) 0%, rgba(100, 237, 188, 1) 100%, rgba(146, 254, 157, 1) 100%);
 }
 
 .blok3 {
-  background: rgb(0,201,255);
-background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, rgba(100,237,188,1) 0%, rgba(146,254,157,1) 100%);
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(51, 220, 220, 1) 0%, rgba(100, 237, 188, 1) 0%, rgba(146, 254, 157, 1) 100%);
 }
+
 .FotoNaarTekst {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 100%);
@@ -340,7 +408,7 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
 
 
 
-
+/*Dashboard*/
 
 .artikel_hoofd {
   font-size: 150%;
@@ -376,12 +444,13 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   padding: 30px;
 }
 
-
+/*blog*/
 
 .Blog_stuk {
   position: relative;
   text-align: center;
   top: -600px;
+  margin: auto;
 
 }
 
@@ -389,15 +458,40 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
 .BlogBlok2,
 .BlogBlok3,
 .BlogBlok4 {
+  width: 660px;
+  height: 460px;
   position: relative;
-  width: 400px;
-  height: auto;
-  display: inline-block;
+  margin-left: 210px;
+  padding-top: 140px;
+
 }
 
 .BlogBlokken {
-  max-width: 900px;
-  top: 100px;
+  top: 300px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  
+}
+
+.blokonderblog {
+  width: 660px;
+  height: 100px;
+  background: rgb(0,0,0);
+background: linear-gradient(79deg, rgba(0,0,0,0.49933476808692223) 0%, rgba(0,0,0,0.7) 100%);
+  margin-left: 210px;
+  position: absolute;
+  z-index: 10;
+  top: 620px;
+  text-align: center;
+  font-size: 190%;
+  padding: 20px;
+}
+
+h2 .blokonderblog  {
+  text-align: center;
+  font-size: 190%;
+  padding: 20px;
 }
 
 .BlogTable {
@@ -485,6 +579,10 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   height: 300px;
 }
 
+.grid-container-faq a {
+  color: white;
+}
+
 .grid-container-faq>div {
   background-color: black;
   text-align: center;
@@ -502,6 +600,7 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   width: 550px;
   color: white;
   top: -20px;
+
 }
 
 .grid-item1>p {
@@ -579,6 +678,9 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   grid-column-end: 3;
   height: 150px;
   width: 590px;
+  background: rgb(4,93,255);
+  background: linear-gradient(79deg, rgba(4,93,255,1) 0%, rgba(51,156,156,1) 0%, rgba(0,32,85,1) 0%, rgba(0,105,133,1) 99%, rgba(0,124,79,1) 100%, rgba(30,57,32,1) 100%);
+
 }
 
 .grid-item2 {
@@ -586,6 +688,8 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   grid-row: 1 / span 2;
   height: 360px;
   width: 285px;
+  background: rgb(54, 126, 100);
+  background: linear-gradient(79deg, rgba(54, 126, 100, 1) 0%, rgba(34, 95, 95, 1) 1%, rgba(2, 46, 126, 1) 100%, rgba(0, 201, 255, 1) 100%, rgba(146, 254, 157, 1) 100%);
 }
 
 .grid-item3 {
@@ -593,20 +697,46 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   grid-row: 2 / span 2;
   height: 360px;
   width: 285px;
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(22, 61, 61, 1) 0%, rgba(25, 55, 44, 1) 100%, rgba(146, 254, 157, 1) 100%);
 }
 
-.grid-item4,
-.grid-item5,
-.grid-item6,
+.grid-item4 {
+  height: 150px;
+  width: 285px;
+  background: rgb(54, 126, 100);
+  background: rgb(2, 46, 126);
+  background: linear-gradient(79deg, rgba(2, 46, 126, 1) 0%, rgba(54, 126, 100, 1) 0%, rgba(34, 95, 95, 1) 1%, rgba(30, 57, 32, 1) 100%, rgba(0, 201, 255, 1) 100%);
+
+}
+
+.grid-item5 {
+  height: 150px;
+  width: 285px;
+  background: rgb(4,93,255);
+  background: linear-gradient(79deg, rgba(4,93,255,1) 0%, rgba(51,156,156,1) 0%, rgba(0,32,85,1) 0%, rgba(0,105,133,1) 99%, rgba(0,124,79,1) 100%, rgba(30,57,32,1) 100%);
+}
+
+.grid-item6 {
+  height: 150px;
+  width: 285px;
+  background: rgb(8,93,234);
+  background: linear-gradient(79deg, rgba(8,93,234,1) 0%, rgba(4,93,255,1) 0%, rgba(51,156,156,1) 0%, rgba(0,124,79,1) 99%, rgba(0,105,133,1) 100%, rgba(30,57,32,1) 100%);
+}
+
 .grid-item7 {
   height: 150px;
   width: 285px;
+  background: rgb(4,93,255);
+  background: linear-gradient(79deg, rgba(4,93,255,1) 0%, rgba(51,156,156,1) 0%, rgba(3,49,125,1) 2%, rgba(0,105,133,1) 100%, rgba(0,124,79,1) 100%, rgba(30,57,32,1) 100%);
 }
 
 .grid-item8 {
   height: 150px;
   grid-column-start: 2;
   grid-column-end: 4;
+  background: rgb(2, 46, 126);
+  background: linear-gradient(79deg, rgba(2, 46, 126, 1) 0%, rgba(54, 126, 100, 1) 0%, rgba(34, 95, 95, 1) 1%, rgba(30, 57, 32, 1) 100%, rgba(0, 201, 255, 1) 100%);
 }
 
 
@@ -683,7 +813,7 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  top: -700px;
+  top: -400px;
   position: relative;
   height: 600px;
 }
@@ -701,7 +831,7 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
 }
 
 .NBSA {
-  top: 200px;
+  top: 600px;
   position: relative;
   max-width: 900px;
   text-align: left;
@@ -719,8 +849,21 @@ background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, 
 
 .hz-foto {
   height: 50px;
+  padding: 20px;
   width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.BlogStudieKeuze {
+  width: 600px;
+  position: relative;
+  margin: auto;
+  top: 300px;
+}
+
+.feedbacktext {
+  width: 600px;
+  font-size: 130%;
 }
