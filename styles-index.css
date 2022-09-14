@@ -59,7 +59,7 @@ body {
   border-radius: 20px;
 }
 
-.navigati_menu,
+.navigatie_menu,
 .navigatie {
   text-align: center;
 
@@ -79,40 +79,90 @@ body {
 
 /*Bottom Menu*/
 
-.BottomMenu {
+.bottommenu {
   background-color: black;
   width: 100%;
   height: 250px;
-  bottom: -600px;
+  bottom: -100px;
   position: relative;
   border-top: grey solid 2px;
+  text-align: center;
 }
 
+.bottommenu>ul {
+  color: black;
+
+}
+
+.bottommenu li {
+  margin-top: 20px;
+  color: black;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  border-radius: 20px;
+  border: 10px;
+  border-color: white;
+  margin: 10 30;
+  padding: 10px;
+  width: 900px;
+  display: inline;
+  margin-right: 20px;
+}
+
+.bottommenu a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+
+}
 
 /* Index */
 
+.foto-entekst {
+  display: flex;
+  left: 100px;
+  position: relative;
+  top: -300px;
+  place-items: center;
+}
+
 .Foto-Mezelf {
-  width: 200px;
+  width: 300px;
   height: auto;
   position: relative;
+  display: inline;
+  left: 0px;
+  bottom: 150px;
 }
 
 .TitelHome {
   font-size: 700%;
   text-align: center;
   position: relative;
-  top: -900px;
+  top: -600px;
+}
+
+.waaromvoormij {
+  text-align: left;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: 0;
+  left: -500px;
+  position: relative;
+  color: #8a8584
 }
 
 
 
 
 .vorm-voor-foto {
-  border-radius: 77% 23% 79% 21% / 53% 75% 25% 47% ;
+  border-radius: 77% 23% 79% 21% / 53% 75% 25% 47%;
   width: 300px;
   height: 300px;
   position: relative;
   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  right: 400px;
+  overflow: hidden;
+  border: 3px solid white;
 }
 
 .Wit-wit {
@@ -133,32 +183,101 @@ body {
   width: 100%;
 }
 
+.boottekst {
+  position: relative;
+  top: 300px;
+  border-radius: 20px;
+  ;
+  display: grid;
+  place-items: center;
+}
+
+.logotekst {
+  display: inline;
+  width: 250px;
+  position: relative;
+  justify-content: center;
+  padding: 20px;
+}
 
 .Wie {
   position: relative;
-  top: -600px;
-  color: white;
-  padding: 30px;
+  color: black;
+  top: -400px;
+  width: 550px;
+  height: 300px;
+  font-size: 130%;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  display: flex;
+  border-radius: 0px 0px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.Wie-ben {
-  font-size: 700%;
-  color: white;
+.fotoboot {
   position: relative;
-  text-align: center;
-  top: -500px;
-  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 550px;
+  height: auto;
+  top: -400px;
 }
 
-.Hobbies > h1 {
+/*profiel*/
+
+.wiebeniktitel {
+  font-size: 500%;
+  position: relative;
+  color: white;
+  top: -600px;
+  text-align: center;
+}
+
+.Wie-Ben-Ik {
+  top: -300px;
+  width: 600px;
+  left: 15%;
+  position: relative;
+  color: #8a8584
+}
+
+.ijsfoto {
+  width: 270px;
+  height: auto;
+  left: 700px;
+  top: -410px;
+  position: relative;
+}
+
+.ulkenmerken {
+  font-size: 120%;
+  list-style: none;
+}
+
+.ulkenmerken>li {
+  margin-top: 10px;
+}
+
+
+.wit-vlak {
+  width: 100%;
+  background-color: black;
+  height: 633px;
+}
+.Hobbies>h1 {
   color: black;
   font-size: 500%;
   position: relative;
 }
 
-
-
+.Schaatsfoto {
+  position: relative;
+  top: -1100px;
+  width: 100%;
+  height: auto;
+}
 
 .Tekening,
 .Diablo,
@@ -167,14 +286,10 @@ body {
   height: auto;
 }
 
-.Diablo {
-  height: 43%;
-}
-
+.Diablo,
 .Tekening {
   height: 43%;
 }
-
 
 .Blok123 {
   margin-left: auto;
@@ -182,10 +297,11 @@ body {
   width: 1160px;
 }
 
-.blok1, .blok2, .blok3 {
+.blok1,
+.blok2,
+.blok3 {
   width: 320px;
   height: 300px;
-  background-color:#f1faed;
   border-radius: 9px;
   margin-bottom: 10px;
   display: inline-block;
@@ -199,6 +315,20 @@ body {
   font-weight: 200;
 }
 
+.blok1 {
+  background: rgb(0,201,255);
+background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 100%, rgba(100,237,188,1) 100%, rgba(146,254,157,1) 100%);
+}
+
+.blok2 {
+  background: rgb(0,201,255);
+background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, rgba(100,237,188,1) 100%, rgba(146,254,157,1) 100%);
+}
+
+.blok3 {
+  background: rgb(0,201,255);
+background: linear-gradient(79deg, rgba(0,201,255,1) 0%, rgba(51,220,220,1) 0%, rgba(100,237,188,1) 0%, rgba(146,254,157,1) 100%);
+}
 .FotoNaarTekst {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 100%);
@@ -301,6 +431,7 @@ body {
   top: 50px;
 
 }
+
 .feedbacktext,
 .programmerentext {
   position: relative;
@@ -426,7 +557,7 @@ body {
   margin-top: -23px;
 }
 
-.grid-item4>h2, 
+.grid-item4>h2,
 .grid-item5>h2,
 .grid-item6>h2,
 .grid-item7>h2,
@@ -536,7 +667,6 @@ body {
 }
 
 
-
 .Kwartaal {
   Color: white;
   position: relative;
@@ -585,4 +715,12 @@ body {
 
 .NBSA>p {
   font-size: 150%;
+}
+
+.hz-foto {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
