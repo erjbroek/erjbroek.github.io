@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="styles-index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Oswald:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="https://kit.fontawesome.com/709a091013.js" crossorigin="anonymous"></script>
   <title>Profiel</title>
 </head>
 
 <body>
   <!--navigatie-->
-  <div class="navigatie_menu">
+  <nav class="navigatie_menu">
     <ul>
       <li><a href="./index.html" class="active">Index</a></li>
       <li><a href="./profile.html">Profiel</a></li>
@@ -20,60 +22,61 @@
       <li><a href="./faq.html">FaQ</a></li>
       <li><a href="./blog.html">Blog</a></li>
     </ul>
-  </div>
+  </nav>
   <div>
     <video id="AchtergrondVideo" autoplay loop muted>
       <source src="Video's/achtergrond1.mp4" type="video/mp4">
     </video>
     <div class="FotoNaarTekst">
     </div>
-    <div class="ZwartVlak"></div>
-
+    
     <header>
       <h1 class="TitelHome">Home</h1>
     </header>
 
-    <div class="foto-entekst">
-      <div class="waaromvoormij">
-        <h1>Waarom is de HBO-ICT studie voor mij?</h1>
-        <p>Het werken met computers en consoles is iets dat ik al mijn hele leven doe. Toen ik nog erg jong was kreeg ik
-          mijn eerste computer van mijn vader. Dat is waar alles begon. Ik begon interesse te krijgen in dingen zoals
-          gamen, maar later ook programmeren. Het werken met computers werd mijn nieuwe hobby.
-        </p>
-        <p>
-          Ik was en ben erg
-          nieuwsgierig en vind het altijd leuk om nieuwe dingen te leren. Toen ik dus ook moest kiezen voor een nieuwe
-          studie wist ik het eigenlijk gelijk. Met de HBO-ICT studie kon ik mijn hobby combineren met mijn studie
-        </p>
-      </div>
-      <div class="vorm-voor-foto">
-        <img src="Images/Ik-Foto.png" class="Foto-Mezelf">
-      </div>
-    </div>
-
-    <div class="boottekst">
-      <img class="fotoboot" src="Images/fotoboot.jpg">
-      <div class="Wie">
-        <div class="logotekst">
-          <i class="fa-solid fa-user"></i>
-          <h2>Erik van den Broek</h2>
+    <Section>
+      <div class="foto-entekst" data-aos="fade-in">
+        <div class="waaromvoormij">
+          <h1>Waarom is de HBO-ICT studie voor mij?</h1>
+          <p>Het werken met computers en consoles is iets dat ik al mijn hele leven doe. Toen ik nog erg jong was kreeg
+            ik
+            mijn eerste computer van mijn vader. Dat is waar alles begon. Ik begon interesse te krijgen in dingen zoals
+            gamen, maar later ook programmeren. Het werken met computers werd mijn nieuwe hobby.
+          </p>
+          <p>
+            Ik was en ben erg
+            nieuwsgierig en vind het altijd leuk om nieuwe dingen te leren. Toen ik dus ook moest kiezen voor een nieuwe
+            studie wist ik het eigenlijk gelijk. Met de HBO-ICT studie kon ik mijn hobby combineren met mijn studie
+          </p>
         </div>
-        <div class="logotekst">
-          <i class="fa-regular fa-hashtag"></i>
-          <h2>18 jaar</h2>
-        </div>
-        <div class="logotekst">
-          <i class="fa-solid fa-location-pin"></i>
-          <h2>Bergen op Zoom</h2>
-        </div>
-        <div class="logotekst">
-          <i class="fa-solid fa-school"></i>
-          <h2>Havo Natuur & Techniek</h2>
+        <div class="vorm-voor-foto">
+          <img src="Images/Ik-Foto.png" class="Foto-Mezelf">
         </div>
       </div>
-
-
-    </div>
+    </Section>
+    <section>
+      <div class="boottekst" data-aos="fade-in">
+        <img class="fotoboot" src="Images/fotoboot.jpg">
+        <div class="Wie">
+          <div class="logotekst">
+            <i class="fa-solid fa-user"></i>
+            <h2>Erik van den Broek</h2>
+          </div>
+          <div class="logotekst">
+            <i class="fa-regular fa-hashtag"></i>
+            <h2>18 jaar</h2>
+          </div>
+          <div class="logotekst">
+            <i class="fa-solid fa-location-pin"></i>
+            <h2>Bergen op Zoom</h2>
+          </div>
+          <div class="logotekst">
+            <i class="fa-solid fa-school"></i>
+            <h2>Havo Natuur & Techniek</h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -115,6 +118,10 @@
         </a>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
