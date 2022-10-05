@@ -1,0 +1,896 @@
+/*body*/
+:root {
+  /* Color Variables */
+  --background-color: ivory;
+  --text-color: black;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Color Variables */
+    --background-color: black;
+    --text-color: ivory;
+  }
+}
+
+body {
+  font-family: helvetica, sans-serif, Arial;
+  margin-top: 50px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  position: relative;
+  margin: 0;
+}
+
+/*navigatie */
+
+.navigatie_menu li {
+  display: inline;
+  width: 600px;
+  margin: 0 0;
+}
+
+.navigatie_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 43%, rgba(255, 255, 255, 0) 100%);
+  margin: 0, 0;
+}
+
+.navigatie_menu a {
+  display: block;
+  display: inline;
+  width: 500px;
+  top: -15px;
+  right: 100px;
+  color: white;
+  text-decoration: none;
+  font-family: helvetica, sans-serif, Arial;
+  position: relative;
+  padding: 5px 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+
+}
+
+.navigatie_menu ul {
+  height: 50px;
+  width: 600px;
+  position: relative;
+  margin: 0 0;
+  left: 100px;
+  margin-top: 50px;
+}
+
+.navigatie_menu li a:hover {
+  border: 1px white solid;
+  border-radius: 20px;
+}
+
+.navigatie_menu,
+.navigatie {
+  text-align: center;
+
+}
+
+.navigatie_menu a:hover:not(.active) {
+  border: 2px white solid;
+  border-radius: 20px;
+}
+
+.active {
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  border-radius: 20px;
+  border: 10px;
+  border-color: white;
+}
+
+
+/*Bottom Menu*/
+
+.bottommenu {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.red {
+  color: red;  
+}
+
+
+.bottommenudashboard {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+  bottom: -900px;
+}
+
+.top .test1 .test2
+.bottommenuprofile {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+  bottom: 200px;
+}
+
+.bottommenublog {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  vertical-align: baseline;
+  position: absolute;
+  border-top: grey solid 2px;
+  text-align: center;
+  vertical-align: bottom;
+  bottom: -2200px;
+}
+
+ul .bottommenu,
+ul .bottommenudashboard,
+ul .bottommenuprofile,
+ul .bottommenublog {
+  color: black;
+
+}
+
+.bottommenu li,
+.bottommenudashboard li,
+.bottommenuprofile li,
+.bottommenublog li {
+  margin-top: 20px;
+  color: black;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  border-radius: 20px;
+  border: 10px;
+  border-color: white;
+  margin: 10 30;
+  padding: 10px;
+  width: 900px;
+  display: inline;
+  margin-right: 20px;
+}
+
+.bottommenu a,
+.bottommenudashboard a,
+.bottommenuprofile a,
+.bottommenublog a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+/* Index */
+
+.foto-entekst {
+  display: flex;
+  left: 100px;
+  position: relative;
+  top: -300px;
+
+}
+
+.Foto-Mezelf {
+  width: 300px;
+  height: auto;
+  position: relative;
+  left: 0px;
+  bottom: 150px;
+}
+
+.TitelHome {
+  font-size: 700%;
+  text-align: center;
+  position: relative;
+  top: -600px;
+}
+
+.waaromvoormij {
+  text-align: left;
+  max-width: 540px;
+  margin-left: auto;
+  left: -500px;
+  position: relative;
+  color: #8a8584
+}
+
+
+
+
+.vorm-voor-foto {
+  border-radius: 77% 23% 79% 21% / 53% 75% 25% 47%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  right: 400px;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+.Wit-wit {
+  position: relative;
+  background-color: white;
+  color: white;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+}
+
+.Wit-zwart {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 350px;
+  position: relative;
+  bottom: -300px;
+  width: 100%;
+}
+
+.boottekst {
+  position: relative;
+  top: 300px;
+  border-radius: 20px;
+  ;
+  display: grid;
+  place-items: center;
+}
+
+.logotekst {
+  display: inline;
+  width: 250px;
+  position: relative;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Wie {
+  position: relative;
+  color: black;
+  top: -400px;
+  width: 550px;
+  height: 300px;
+  font-size: 130%;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  display: flex;
+  border-radius: 0px 0px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.fotoboot {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 550px;
+  height: auto;
+  top: -400px;
+}
+
+/*profiel*/
+
+.wiebeniktitel {
+  font-size: 500%;
+  position: relative;
+  color: white;
+  top: -600px;
+  text-align: center;
+}
+
+.Wie-Ben-Ik {
+  top: -300px;
+  width: 600px;
+  left: 15%;
+  position: relative;
+  color: #8a8584
+}
+
+.ijsfoto {
+  width: 270px;
+  height: auto;
+  left: 700px;
+  top: -410px;
+  position: relative;
+}
+
+.ulkenmerken {
+  font-size: 120%;
+  list-style: none;
+}
+
+.ulkenmerken>li {
+  margin-top: 10px;
+}
+
+
+.wit-vlak {
+  width: 100%;
+  background-color: black;
+  height: 633px;
+}
+
+.Hobbies>h1 {
+  color: black;
+  font-size: 500%;
+  position: relative;
+}
+
+.Hobbies .almijnhobbies {
+  position: relative;
+  top: 100px;
+}
+
+.Tekening,
+.Diablo,
+.sombrerofoto {
+  width: 320px;
+  height: auto;
+}
+
+.Diablo,
+.Tekening {
+  height: 43%;
+}
+
+.Blok123 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  position: relative;
+  top: -550px;
+}
+
+.dividor-hobbies {
+  width: 90%;
+  height: 3px;
+  background-color: grey;
+  margin: auto;
+  position: relative;
+  top: -640px;
+
+}
+
+.TitelHobbies {
+  font-size: 400%;
+  color: white;
+  text-align: center;
+  top: -620px;
+  position: relative;
+}
+
+.blok1,
+.blok2,
+.blok3 {
+  width: 320px;
+  height: 300px;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  display: inline-block;
+  align-items: center;
+  margin-right: 20px;
+  color: black;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.blok1 {
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(51, 220, 220, 1) 100%, rgba(100, 237, 188, 1) 100%, rgba(146, 254, 157, 1) 100%);
+}
+
+.blok2 {
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(51, 220, 220, 1) 0%, rgba(100, 237, 188, 1) 100%, rgba(146, 254, 157, 1) 100%);
+}
+
+.blok3 {
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(51, 220, 220, 1) 0%, rgba(100, 237, 188, 1) 0%, rgba(146, 254, 157, 1) 100%);
+}
+
+.FotoNaarTekst {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 520px;
+}
+
+
+
+/*Dashboard*/
+
+.artikel_hoofd {
+  font-size: 150%;
+  position: absolute;
+  top: 250px;
+  right: 200px;
+
+}
+
+.explanation {
+  font-size: 80%;
+  position: absolute;
+  top: 100px;
+  right: 450px;
+}
+
+.uitleg_studiekeuze {
+  font-size: 80%
+}
+
+.de_FAQ,
+.DashboardTitel,
+.Blog_stuk {
+  font-size: 400%;
+}
+
+.DashboardTitel {
+  font-size: 700%;
+  color: white;
+  position: relative;
+  text-align: center;
+  top: -700px;
+  padding: 30px;
+}
+
+/*blog*/
+
+.Blog_stuk {
+  position: relative;
+  text-align: center;
+  top: -600px;
+  margin: auto;
+
+}
+
+.BlogBlok1,
+.BlogBlok2,
+.BlogBlok3,
+.BlogBlok4 {
+  width: 660px;
+  height: 460px;
+  position: relative;
+  margin-left: 210px;
+  padding-top: 140px;
+
+}
+
+.BlogBlokken {
+  top: 300px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+
+}
+
+.blokonderblog {
+  width: 660px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(79deg, rgba(0, 0, 0, 0.49933476808692223) 0%, rgba(0, 0, 0, 0.7) 100%);
+  margin-left: 210px;
+  position: absolute;
+  z-index: 10;
+  top: 620px;
+  text-align: center;
+  font-size: 190%;
+  padding: 20px;
+}
+
+h2 .blokonderblog {
+  text-align: center;
+  font-size: 190%;
+  padding: 20px;
+}
+
+.BlogTable {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px;
+  position: relative;
+  border: solid white 1px;
+  padding: 10px;
+}
+
+.BlogProgrammeren {
+  position: relative;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+}
+
+.feedbacktitel {
+  font-size: 300%;
+  text-align: center;
+  top: 100px;
+  position: relative;
+}
+
+.titelProgrammeren {
+  font-size: 300%;
+  text-align: center;
+  top: 50px;
+
+}
+
+.feedbacktext,
+.programmerentext {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px;
+  width: 800px;
+  font-size: 150%;
+}
+
+.swottitel {
+  font-size: 400%;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.swotintro {
+  position: relative;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  font-size: 150%;
+}
+
+.studiekeuze {
+  position: absolute;
+  top: 300px;
+}
+
+/*Grid systeem voor FaQ*/
+
+.grid-container-faq {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  background-color: black;
+  padding: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  position: relative;
+  height: 300px;
+}
+
+.grid-container-faq a {
+  color: white;
+}
+
+.grid-container-faq>div {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 10px;
+  border: solid #2b2a28 1px;
+}
+
+.grid-item1>h2 {
+  font-size: 80%;
+  position: relative;
+  text-align: left;
+  margin-left: 30px;
+  width: 550px;
+  color: white;
+  top: -20px;
+
+}
+
+.grid-item1>p {
+  font-size: 60%;
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 20px;
+  position: relative;
+  bottom: 27px;
+  color: white;
+}
+
+.grid-item2>h2 {
+  position: relative;
+  font-size: 80%;
+  width: 240px;
+  top: -20px;
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+}
+
+.grid-item2>p {
+  position: relative;
+  font-size: 60%;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.grid-item3>h2 {
+  position: relative;
+  font-size: 80%;
+  top: -20px;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.grid-item3>p,
+.grid-item4>p,
+.grid-item5>p,
+.grid-item6>p,
+.grid-item7>p,
+.grid-item8>p {
+  position: relative;
+  font-size: 60%;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -23px;
+}
+
+.grid-item4>h2,
+.grid-item5>h2,
+.grid-item6>h2,
+.grid-item7>h2,
+.grid-item8>h2 {
+  position: relative;
+  font-size: 65%;
+  top: -20px;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+
+
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 150px;
+  width: 590px;
+  background: rgb(4, 93, 255);
+  background: linear-gradient(79deg, rgba(4, 93, 255, 1) 0%, rgba(51, 156, 156, 1) 0%, rgba(0, 32, 85, 1) 0%, rgba(0, 105, 133, 1) 99%, rgba(0, 124, 79, 1) 100%, rgba(30, 57, 32, 1) 100%);
+
+}
+
+.grid-item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  height: 360px;
+  width: 285px;
+  background: rgb(54, 126, 100);
+  background: linear-gradient(79deg, rgba(54, 126, 100, 1) 0%, rgba(34, 95, 95, 1) 1%, rgba(2, 46, 126, 1) 100%, rgba(0, 201, 255, 1) 100%, rgba(146, 254, 157, 1) 100%);
+}
+
+.grid-item3 {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  height: 360px;
+  width: 285px;
+  background: rgb(0, 201, 255);
+  background: linear-gradient(79deg, rgba(0, 201, 255, 1) 0%, rgba(22, 61, 61, 1) 0%, rgba(25, 55, 44, 1) 100%, rgba(146, 254, 157, 1) 100%);
+}
+
+.grid-item4 {
+  height: 150px;
+  width: 285px;
+  background: rgb(54, 126, 100);
+  background: rgb(2, 46, 126);
+  background: linear-gradient(79deg, rgba(2, 46, 126, 1) 0%, rgba(54, 126, 100, 1) 0%, rgba(34, 95, 95, 1) 1%, rgba(30, 57, 32, 1) 100%, rgba(0, 201, 255, 1) 100%);
+
+}
+
+.grid-item5 {
+  height: 150px;
+  width: 285px;
+  background: rgb(4, 93, 255);
+  background: linear-gradient(79deg, rgba(4, 93, 255, 1) 0%, rgba(51, 156, 156, 1) 0%, rgba(0, 32, 85, 1) 0%, rgba(0, 105, 133, 1) 99%, rgba(0, 124, 79, 1) 100%, rgba(30, 57, 32, 1) 100%);
+}
+
+.grid-item6 {
+  height: 150px;
+  width: 285px;
+  background: rgb(8, 93, 234);
+  background: linear-gradient(79deg, rgba(8, 93, 234, 1) 0%, rgba(4, 93, 255, 1) 0%, rgba(51, 156, 156, 1) 0%, rgba(0, 124, 79, 1) 99%, rgba(0, 105, 133, 1) 100%, rgba(30, 57, 32, 1) 100%);
+}
+
+.grid-item7 {
+  height: 150px;
+  width: 285px;
+  background: rgb(4, 93, 255);
+  background: linear-gradient(79deg, rgba(4, 93, 255, 1) 0%, rgba(51, 156, 156, 1) 0%, rgba(3, 49, 125, 1) 2%, rgba(0, 105, 133, 1) 100%, rgba(0, 124, 79, 1) 100%, rgba(30, 57, 32, 1) 100%);
+}
+
+.grid-item8 {
+  height: 150px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: rgb(2, 46, 126);
+  background: linear-gradient(79deg, rgba(2, 46, 126, 1) 0%, rgba(54, 126, 100, 1) 0%, rgba(34, 95, 95, 1) 1%, rgba(30, 57, 32, 1) 100%, rgba(0, 201, 255, 1) 100%);
+}
+
+
+
+
+.de_FAQ {
+  position: absolute;
+  top: 150px;
+  max-width: 900px;
+  font-size: 700%;
+  margin-left: 350px;
+
+}
+
+.FaQ1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Vragen_antwoorden {
+  position: relative;
+  top: -800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  color: black;
+}
+
+.Corona_link {
+  color: white;
+}
+
+#AchtergrondVideo {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+}
+
+
+
+/*Dashboard tabel */
+
+.DashTabel {
+  border: 1px solid white;
+  position: relative;
+  color: white;
+  text-align: left;
+  font-size: 170%;
+  width: 800px;
+  border-collapse: collapse;
+  top: -20px;
+}
+
+.DashTabel tr td {
+  border: 1px solid white;
+}
+
+
+.Kwartaal {
+  Color: white;
+  position: relative;
+  font-size: 200%;
+  top: -17px;
+}
+
+.GridDash {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 70px;
+  background-color: black;
+  padding: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -400px;
+  position: relative;
+  height: 600px;
+}
+
+.Grid1D {
+  width: 900px;
+  height: 300px;
+  background-color: black;
+  border: solid #2b2a28 1px;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  top: 200px;
+  display: grid;
+}
+
+.NBSA {
+  top: 600px;
+  position: relative;
+  max-width: 900px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NBSA>h1 {
+  font-size: 300%;
+}
+
+.NBSA>p {
+  font-size: 150%;
+}
+
+.hz-foto {
+  height: 50px;
+  padding: 20px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BlogStudieKeuze {
+  width: 600px;
+  position: relative;
+  margin: auto;
+  top: 300px;
+}
+
+.feedbacktext {
+  width: 600px;
+  font-size: 130%;
+}
+
+::-webkit-scrollbar {
+  width: 1.5em;
+  height: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(146, 254, 157);
+  background: linear-gradient(180deg, rgba(146, 254, 157, 1) 0%, rgba(0, 201, 255, 1) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 100vw;
+  border: 4px solid rgba(100, 100, 100, 0.2)
+}
