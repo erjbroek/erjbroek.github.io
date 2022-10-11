@@ -3,10 +3,10 @@
   /* Color Variables */
   --background-color: white;
   --text-color: black;
-  --background-color-gradient: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6730042358740371) 62%, rgba(255,255,255,1) 100%);
+  --background-color-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6730042358740371) 62%, rgba(255, 255, 255, 1) 100%);
   --video-invertor: invert(1);
-  --navMenu-gradient: linear-gradient(180deg, rgba(255,255,255,1) 48%, rgba(255,255,255,0) 100%);
-  --video-naar-tekst: linear-gradient(180deg, rgba(255,255,255,1) 21%, rgba(255,255,255,0) 100%);
+  --navMenu-gradient: linear-gradient(180deg, rgba(255, 255, 255, 1) 48%, rgba(255, 255, 255, 0) 100%);
+  --video-naar-tekst: linear-gradient(180deg, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 0) 100%);
   --pageContainer-Color: rgba(126, 128, 130, 0.23);
   --border-navigatie: 2px black solid;
   --element-width: 0%;
@@ -19,9 +19,9 @@
     --text-color: white;
     --background-color-gradient: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 100%);
     --video-invertor: invert(0);
-    --navMenu-gradient: linear-gradient(180deg, rgba(0,0,0,1) 41%, rgba(255,255,255,0) 100%);
-    --video-naar-tekst: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(255,255,255,0) 100%);
-    --pageContainer-Color: rgba(126, 128, 130, 0.23);
+    --navMenu-gradient: linear-gradient(180deg, rgba(0, 0, 0, 1) 41%, rgba(255, 255, 255, 0) 100%);
+    --video-naar-tekst: linear-gradient(180deg, rgba(0, 0, 0, 1) 21%, rgba(255, 255, 255, 0) 100%);
+    --pageContainer-Color: rgba(126, 128, 130, 0.502);
     --border-navigatie: 2px white solid;
     --element-width: 0%;
   }
@@ -108,14 +108,14 @@ body {
 
 .bottommenu {
   background-color: var(--background-color);
-  width: 100vw;
+  width: 100%;
   height: 250px;
   vertical-align: baseline;
   position: absolute;
   border-top: grey solid 2px;
   text-align: center;
   vertical-align: bottom;
-  bottom: -1400px;
+  bottom: -1300px;
 }
 
 .bottommenuFaQ {
@@ -127,7 +127,7 @@ body {
   border-top: grey solid 2px;
   text-align: center;
   vertical-align: bottom;
-  bottom: -400px;
+  bottom: -1400px;
 }
 
 .bottommenudashboard {
@@ -139,7 +139,7 @@ body {
   border-top: grey solid 2px;
   text-align: center;
   vertical-align: bottom;
-  bottom: -1680px;
+  bottom: -1880px;
 }
 
 .bottommenuprofile {
@@ -155,15 +155,15 @@ body {
 }
 
 .bottommenublog {
-  background-color: black;
+  background-color: var(--background-color);
   width: 100%;
-  height: 50px;
+  height: 100px;
   vertical-align: baseline;
   position: absolute;
   border-top: grey solid 2px;
   text-align: center;
   vertical-align: bottom;
-  bottom: -2200px;
+  bottom: -3400px;
 }
 
 ul .bottommenu,
@@ -196,7 +196,7 @@ ul .bottommenuFaQ {
 .bottommenudashboard a,
 .bottommenuprofile a,
 .bottommenublog a,
-.bottommenuFaQ a{
+.bottommenuFaQ a {
   color: black;
   text-decoration: none;
   padding: 10px;
@@ -213,7 +213,43 @@ ul .bottommenuFaQ {
   margin-left: 250px;
   margin-right: auto;
   background: var(--pageContainer-Color);
-  height: 127%;
+  height: 120%;
+  z-index: -2;
+}
+
+.blogContainer {
+  width: 1000px;
+  top: 870px;
+  position: absolute;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: auto;
+  background: var(--pageContainer-Color);
+  height: 330%;
+  z-index: -2;
+}
+
+.containersafari {
+  width: 1000px;
+  top: 870px;
+  position: absolute;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: auto;
+  background: var(--pageContainer-Color);
+  height: 330%;
+  z-index: -2;
+}
+
+.FaQContainer {
+  width: 1000px;
+  top: 870px;
+  position: absolute;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: auto;
+  background: var(--pageContainer-Color);
+  height: 150%;
   z-index: -2;
 }
 
@@ -225,7 +261,7 @@ ul .bottommenuFaQ {
   margin-left: 250px;
   margin-right: auto;
   background: var(--pageContainer-Color);
-  height: 220%;
+  height: 190%;
   z-index: -2;
   color: var(--text-color);
 }
@@ -256,7 +292,7 @@ ul .bottommenuFaQ {
   margin-left: auto;
   left: -500px;
   position: relative;
-  color: #8a8584;
+  color: var(--text-color);
   top: 250px;
 }
 
@@ -346,7 +382,7 @@ ul .bottommenuFaQ {
   width: 600px;
   left: 5%;
   position: relative;
-  color: #8a8584;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -356,6 +392,7 @@ ul .bottommenuFaQ {
   left: 620px;
   top: -450px;
   position: relative;
+  border-radius: 20px;
 }
 
 .ulkenmerken {
@@ -385,21 +422,21 @@ ul .bottommenuFaQ {
   top: 100px;
 }
 
-.Diablo{
+.Diablo {
   position: relative;
   width: 400px;
   height: 200px;
   left: 150px;
 }
 
-.sombrerofoto{
+.sombrerofoto {
   position: relative;
   width: 400px;
   height: 200px;
   left: -150px;
 }
 
-.Tekening{
+.Tekening {
   position: relative;
   width: 450px;
   height: 180px;
@@ -412,6 +449,7 @@ ul .bottommenuFaQ {
   width: 1160px;
   position: relative;
   top: -50px;
+  left: 12px;
 }
 
 
@@ -428,31 +466,33 @@ ul .bottommenuFaQ {
 .blok3 {
   width: 700px;
   height: 220px;
-  border-radius: 9px;
+  border-radius: 16px;
   margin-bottom: 10px;
   align-items: center;
   margin: auto;
   color: var(--text-color);
+  background: var(--background-color);
   padding: 20px;
   font-size: 150%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   top: 600px;
-  border: 2px solid grey;
 }
-.blok1{
-  right: 160px;
+
+.blok1 {
+  margin-left: 120px;
   position: relative;
   top: -120px;
 }
 
-.blok1 h2{
+.blok1 h2 {
   position: relative;
   left: 200px;
   bottom: 230px;
 }
-.blok1 p{
+
+.blok1 p {
   position: relative;
   font-size: 80%;
   max-width: 200px;
@@ -460,37 +500,40 @@ ul .bottommenuFaQ {
   left: 450px;
   bottom: 250px;
 }
+
 .blok2 {
-  right: 0px;
+  margin-left: 120px;
   position: relative;
   top: -70px;
 }
-.blok2 h2{
+
+.blok2 h2 {
   position: relative;
   right: 200px;
   bottom: 240px;
 }
 
-.blok2 p{
+.blok2 p {
   position: relative;
   font-size: 80%;
   max-width: 200px;
   text-align: left;
   bottom: 260px;
 }
+
 .blok3 {
-  right: 160px;
+  margin-left: 120px;
   position: relative;
   top: -20px;
 }
 
-.blok3 h2{
+.blok3 h2 {
   position: relative;
   left: 200px;
   bottom: 230px;
 }
 
-.blok3 p{
+.blok3 p {
   position: relative;
   font-size: 80%;
   max-width: 200px;
@@ -498,6 +541,7 @@ ul .bottommenuFaQ {
   left: 480px;
   bottom: 250px;
 }
+
 .FotoNaarTekst {
   background: var(--background-color-gradient);
   background: var(--background-color-gradient);
@@ -551,7 +595,7 @@ ul .bottommenuFaQ {
   padding: 30px;
 }
 
-.progressbarTotal{
+.progressbarTotal {
   background-color: rgba(130, 130, 130, 0.67);
   border: 3px solid grey;
   width: 900px;
@@ -560,18 +604,83 @@ ul .bottommenuFaQ {
   border-radius: 15px 15px 15px 15px;
   position: relative;
   overflow: hidden;
+  top: 10px;
 }
 
-.progressbarImput{
-  background-color: red;
+input{
+  width: 200px;
+  color: var(--text-color);
+  background: var(--background-color);
+  border-radius: 7px;
+  border: var(--border-navigatie)
+}
+.progressbarImput {
   width: 100px;
   height: 50px;
   border-radius: 15px 0px 0px 15px;
 }
 
+.rainbow-bg {
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg {
+
+  100%,
+  0% {
+    background-color: rgb(255, 0, 0);
+  }
+
+  8% {
+    background-color: rgb(255, 127, 0);
+  }
+
+  16% {
+    background-color: rgb(255, 255, 0);
+  }
+
+  25% {
+    background-color: rgb(127, 255, 0);
+  }
+
+  33% {
+    background-color: rgb(0, 255, 0);
+  }
+
+  41% {
+    background-color: rgb(0, 255, 127);
+  }
+
+  50% {
+    background-color: rgb(0, 255, 255);
+  }
+
+  58% {
+    background-color: rgb(0, 127, 255);
+  }
+
+  66% {
+    background-color: rgb(0, 0, 255);
+  }
+
+  75% {
+    background-color: rgb(127, 0, 255);
+  }
+
+  83% {
+    background-color: rgb(255, 0, 255);
+  }
+
+  91% {
+    background-color: rgb(255, 0, 127);
+  }
+}
+
 .my-element {
   width: var(--element-height);
 }
+
 /*blog*/
 
 .Blog_stuk {
@@ -584,16 +693,18 @@ ul .bottommenuFaQ {
 .BlogBlok1,
 .BlogBlok2,
 .BlogBlok3,
-.BlogBlok4 {
+.BlogBlok4,
+.BlogBlok5 {
   width: 660px;
   height: 460px;
   position: relative;
-  margin-left: 210px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 140px;
 }
 
 .BlogBlokken {
-  top: 300px;
+  top: 100px;
   position: relative;
   margin: auto;
   width: 100%;
@@ -601,14 +712,14 @@ ul .bottommenuFaQ {
 }
 
 .blokonderblog {
-  width: 660px;
-  height: 100px;
+  width: 620px;
+  height: 80px;
   background: rgb(0, 0, 0);
   background: linear-gradient(79deg, rgba(0, 0, 0, 0.49933476808692223) 0%, rgba(0, 0, 0, 0.7) 100%);
-  margin-left: 210px;
   position: absolute;
+  color: white;
   z-index: 10;
-  top: 620px;
+  top: 595px;
   text-align: center;
   font-size: 190%;
   padding: 20px;
@@ -628,6 +739,7 @@ h2 .blokonderblog {
   position: relative;
   border: solid white 1px;
   padding: 10px;
+  text-align: left;
 }
 
 .BlogProgrammeren {
@@ -649,17 +761,96 @@ h2 .blokonderblog {
   font-size: 300%;
   text-align: center;
   top: 50px;
+}
 
+.bedrijf1 {
+  width: 900px;
+  background: var(--background-color);
+  height: 500px;
+  top: 300px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.bedrijf2 {
+  width: 900px;
+  background: var(--background-color);
+  height: 500px;
+  margin-top: 100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 300px;
+}
+
+.bedrijf3 {
+  width: 900px;
+  background: var(--background-color);
+  height: 500px;
+  top: 300px;
+  margin-top: 100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bedrijf1Foto {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  left: -200px;
+}
+
+.bedrijf1Titel {
+  position: relative;
+  display: inline;
+  bottom: 270px;
+  font-size: 240%;
+}
+
+.bedrijf1Tekst {
+  position: relative;
+  bottom: 270px;
+  max-width: 400px;
+  font-size: 120%;
+  left: 430px;
+  text-align: left;
+}
+
+.textContainer {
+  position: relative;
+  top: 150px;
 }
 
 .feedbacktext,
 .programmerentext {
+  width: 600px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 200px;
-  width: 800px;
+  margin: auto;
+  top: 150px;
   font-size: 150%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.BlogProgrammeren {
+  text-align: left;
+}
+
+#pageContainerProgramming {
+  height: 1400px;
+}
+
+#pageContainerFeedback {
+  height: 1600px;
+}
+
+#pageContainerSWOT {
+  height: 900px;
 }
 
 .swottitel {
@@ -676,6 +867,11 @@ h2 .blokonderblog {
   margin-right: auto;
   top: 100px;
   font-size: 150%;
+  text-align: left;
+}
+
+#blogContainerSafari {
+  height: 2100px;
 }
 
 .studiekeuze {
@@ -689,12 +885,11 @@ h2 .blokonderblog {
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
-  background: var(--background-color);
   padding: 10px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  top: 0px;
+  top: 200px;
   position: relative;
   height: 830px;
 }
@@ -913,9 +1108,10 @@ h2 .blokonderblog {
   color: var(--text-color);
 }
 
-.dashContainer{
-  height: 2100px;
+.dashContainer {
+  height: 2300px;
 }
+
 .Kwartaal {
   color: var(--text-color);
   position: relative;
@@ -937,13 +1133,13 @@ h2 .blokonderblog {
 }
 
 .Grid1D {
-  width: 900px;
+  width: 870px;
   height: 300px;
   background: var(--background-color);
   border: solid #2b2a28 1px;
   border-radius: 10px;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   top: 200px;
   display: grid;
 }
@@ -978,7 +1174,10 @@ h2 .blokonderblog {
   width: 600px;
   position: relative;
   margin: auto;
-  top: 300px;
+  top: 150px;
+  font-size: 150%;
+  max-width: 700px;
+  text-align: left;
 }
 
 .feedbacktext {

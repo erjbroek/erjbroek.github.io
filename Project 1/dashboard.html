@@ -166,25 +166,34 @@
         </table>
       </div>
       <div class="studiePoints">
-        <form onsubmit = "return false">
+        <form onsubmit="return false">
           <label for="studiePointsImput">Studiepunten</label>
-          <input type="text" placeholder="Enter text" onblur="getVal()">
+          <input type="text" placeholder="Aantal studiepunten" onblur="getVal()">
           <input type="submit">
         </form>
         <div class="progressbarTotal">
           <div class="progressbarImput" id="progressbarImputId"></div>
         </div>
       </div>
-        <script>
-          function getVal(event) {
-            const imputWaarde = document.querySelector('input').value;
-            let numberSP = (imputWaarde / 60 * 100);
-            let percentageSP = numberSP + "%";
-            console.log(percentageSP);
-            let test = document.getElementById("progressbarImputId");
-            test.style.width = percentageSP;
+      <script>
+        function getVal(event) {
+          const imputWaarde = document.querySelector('input').value;
+          let numberSP = (imputWaarde / 60 * 100);
+          let percentageSP = numberSP + "%";
+          console.log(percentageSP);
+          let test = document.getElementById("progressbarImputId");
+          test.style.width = percentageSP;
+          if (imputWaarde >= 45 && imputWaarde < 60) {
+            test.style.backgroundColor = "lightgreen";
           }
-        </script>
+          else if (imputWaarde < 45) {
+            test.style.backgroundColor = "red";
+          }
+          else {
+            test.style.animation = "rainbow-bg 2.5s infinite";
+          }
+        }
+      </script>
     </div>
   </article>
   <section <div class="NBSA">
