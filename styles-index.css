@@ -767,7 +767,7 @@ h2 .blokonderblog {
 .bedrijf1 {
   width: 900px;
   background: var(--background-color);
-  height: 500px;
+  height: 700px;
   top: 300px;
   position: relative;
   margin-left: auto;
@@ -778,7 +778,7 @@ h2 .blokonderblog {
 .bedrijf2 {
   width: 900px;
   background: var(--background-color);
-  height: 500px;
+  height: 700px;
   margin-top: 100px;
   position: relative;
   margin-left: auto;
@@ -789,7 +789,7 @@ h2 .blokonderblog {
 .bedrijf3 {
   width: 900px;
   background: var(--background-color);
-  height: 500px;
+  height: 650px;
   top: 300px;
   margin-top: 100px;
   position: relative;
@@ -806,11 +806,37 @@ h2 .blokonderblog {
   left: -200px;
 }
 
-.bedrijf1Titel {
+.bedrijf2Foto,
+.bedrijf3Foto {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  left: -100px;
+}
+.bedrijf1Titel{
+    position: relative;
+    display: inline;
+    bottom: 270px;
+    font-size: 240%;
+    margin-top: 90px;
+}
+.bedrijf2Titel,
+.bedrijf3Titel {
   position: relative;
   display: inline;
-  bottom: 270px;
+  bottom: 0px;
   font-size: 240%;
+  margin-top: 90px;
+}
+
+.bedrijf3Titel{
+  top: -150px;
+}
+
+.bedrijf2Foto{
+  left: -30px;
 }
 
 .bedrijf1Tekst {
@@ -820,6 +846,28 @@ h2 .blokonderblog {
   font-size: 120%;
   left: 430px;
   text-align: left;
+}
+
+.bedrijf2Tekst {
+  position: relative;
+  max-width: 400px;
+  font-size: 120%;
+  top: 50px;
+  left: 430px;
+  text-align: left;
+}
+
+.bedrijf3Tekst{
+  position: relative;
+  max-width: 400px;
+  font-size: 120%;
+  top: -150px;
+  left: 430px;
+  text-align: left;
+}
+
+.bedrijf3Tekst{
+  top: -100px;
 }
 
 .textContainer {
@@ -872,7 +920,7 @@ h2 .blokonderblog {
 }
 
 #blogContainerSafari {
-  height: 2100px;
+  height: 2600px;
 }
 
 .studiekeuze {
