@@ -2,7 +2,7 @@
     position: relative;
     bottom: 8px;
     width: 70vw;
-    height: 94vh;
+    height: 62vw;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -12,94 +12,99 @@
     border-radius: 20px 0px 0px 0px;
 }
 
-.topMenu{
+.topMenu {
     background: rgb(255,251,251);
     background: linear-gradient(90deg, rgba(255,251,251,0.35591736694677867) 0%, rgba(255,252,252,1) 40%, rgba(255,255,255,0.3531162464985994) 100%);
     overflow: hidden;
     position: relative;
     top: 0px;
     width: 100%;
-    height: 340px;
+    height: 22.07031vw;
 }
+
 
 #watermelonClick {
     position: relative;
-    left: 39px;
+    left: 2.5vw;
     bottom: 40px;
-    width: 300px;
+    width: 19.53vw;
     height: auto;
     transition: bottom 0.3s;
     transition-timing-function: cubic-bezier(0.1, 1);
 }
 
 .melonHitbox {
-    width: 240px;
-    height: 240px;
+    width: 9.375vw;
+    height: 9.375vw;
     position: absolute;
-    left: 75px;
-    bottom: 130px;
+    left: 4.88281vw;
+    bottom: 8.51562vw;
     border-radius: 50%;
     z-index: 11;
 }
 
+
 .melonContainer {
-    width: 540px;
-    height: 340px;
+    width: 35.15625vw;
+    height: 22.07031vw;
     z-index: 10;
     position: absolute;
-    left: -68px;
-    top: 80px;
+    left: -4.45312vw;
+    top: 5.35000vw;
 }
 
 .melonButton {
     position: relative;
-    left: 39px;
-    bottom: 10px;
-    width: 180px;
+    left: 2.54688vw;
+    bottom: 0.66406vw;
+    width: 11.71875vw;
     height: auto;
 }
 
+
 .melonSquare {
-    width: 400px;
-    height: 400px;
+    width: 26.04167vw;
+    height: 26.04167vw;
     background: white;
-    border-radius: 20px;
+    border-radius: 1.30208vw;
     position: relative;
     float: left;
     display: block;
 }
 
+
 .upgradeList {
     position: absolute;
-    top: 340px;
-    width: 400px;
+    top: 22.03542vw;
+    width: 26.4vw;
     height: 368px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3335084033613446) 47%, rgba(255,255,255,0.2046568627450981) 100%);
-    bottom: 30px;
+    bottom: 1.95312vw;
     display: block;
 }
 
 .upgradeContainer {
-    width: 370px;
-    height: 320px;;
-    margin-left: 15px;
-    margin-top: 30px;
+    width: 22.85156vw;
+    height: 20.83333vw;
+    margin-left: 0.97656vw;
+    margin-top: 5.07812vw;
 }
+
 
 .upgrades {
     display: grid;
-    width: 350px;
-    height: 275px;
+    width: 21.48438vw;
+    height: 16.92708vw;
     position: relative;
-    margin-left: 10px;
-    margin-top: 20px;
-    border-radius: 20px;
+    margin-left: 0.65104vw;
+    margin-top: 1.04167vw;
+    border-radius: 1.30208vw;
     background: rgb(183, 232, 151);
     z-index: 10;
     overflow: hidden;
-    padding-top: 1vw;
-}
+    padding-top: 1.30208vw;
+    }
 
 .added {
     font-family: "Century Gothic";
@@ -108,7 +113,7 @@
 
 .upgrade {
     background-color: #68c46b;
-    width: 90%;
+    width: 19.5vw;
     margin-top: 0.95vw;
     height: 16.2vh;
     top: -1.6vh;
@@ -126,7 +131,7 @@
     overflow: hidden;
     position: relative;
     font-family: "Century Gothic";
-    font-size: 130%;
+    font-size: 1.2vw;
     font-weight: 100;
 }
 
@@ -137,7 +142,7 @@
     left: 1.4vw;
     max-width: 18vw;
     font-family: "Century Gothic";
-    font-size: 80%;
+    font-size: 0.9vw;
 }
 
 #melon-info {
@@ -151,7 +156,7 @@
     left: 1.4vw;
     max-width: 18vw;
     font-family: "Century Gothic";
-    font-size: 80%;
+    font-size: 0.9vw;
 }
 
 /* .description {
@@ -161,20 +166,20 @@
 .melonCounter {
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 19.5vw;
     height: 150px;
     top: 23vh;
     left: 12vw;
     text-align: center;
-    font-size: 60px;
+    font-size: 4vw;
     font-family: "Century Gothic";
 }
 
 .melonAmount {
     position: absolute;
     text-align: center;
-    font-size: 100px;
-    width: 600px;
+    font-size: 6.6vw;
+    width: 38vw;
     height: 120px;
     right: 10px;
     top: 4vw;
@@ -184,12 +189,13 @@
 
 .melonPerSec {
     text-align: center;
-    width: 120px;
+    width: 7vw;
     height: 20px;
     position: absolute;
     right: 17.5vw;
     bottom: 10vh;
     font-family: "Century Gothic";
+    font-size: 1vw;
 }
 
 .buildingContainer{
@@ -203,9 +209,9 @@
 
 .building {
     background: white;
-    margin-left: 20px;
+    margin-left: 1.3vw;
     margin-bottom: 2vh;
-    width: 270px;
+    width: 17.5vw;
     height: 100px;
     display: inline-block;
     vertical-align: top;
@@ -213,19 +219,19 @@
 }
 
 #buildingName{
-    width: 130px;
+    width: 9vw;
     height: 30px;   
     font-family: "Century Gothic";
     font-weight: bold;
     position: relative;
-    font-size: 130%;
+    font-size: 1.2vw;
     top: 2px;
-    left: 5px;
+    left: 0.325vw;
     z-index: 10;
 }
 
 .addedMelonsPerSec{
-    width: 100px;
+    width: 6.51vw;
     height: 30px;
     font-family: "Century Gothic";
     font-weight: bold;
@@ -237,33 +243,44 @@
 }
 
 .price{
-    width: 140px;
+    width: 9vw;
     height: 30px;
     font-family: "Century Gothic";
     font-weight: bold;
     position: relative;
     text-align: right;
-    left: 120px;
+    left: 7vw;
     top: 40px;
+    color: blue;
 }
 
 .count{
-    width: 100px;
+    width: 6.51vw;
     height: 30px;
     font-family: "Century Gothic";
     font-weight: bold;
     position: relative;
-    font-size: 350%;
+    font-size:3.8vw;
     color: rgba(0, 0, 0, 0.2);
-    left: 80px;
+    left: 5.7vw;
     top: -25px;
 }
 
 #picture {
-    width: 60px;
+    width: 4vw;
     height: 60px;
     position: relative;
     left: 10px;
     top: -60px;
     border-radius: 5px;
 }
+
+/* CSS Styles for Elements with innerHTML */
+#plantPrice,
+#addedPlant,
+#farmPrice,
+#addedFarm {
+  font-family: "Century Gothic";
+  font-size: 1vw;
+}
+
