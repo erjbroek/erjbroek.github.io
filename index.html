@@ -78,15 +78,8 @@
                 //     <p>Protein: ${fetchedData.nutritions.protein}g</p>
                 //     `;
                 // }
-
-                fetch('https://www.fruityvice.com/api/fruit/Banana')
-  .then(response => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error('Request failed');
-    }
-  })
+                fetch('https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/Banana')
+  .then(response => response.json())
   .then(data => {
     // Process the received data
     console.log(data);
@@ -95,6 +88,7 @@
     // Handle any errors that occurred during the request
     console.log(error);
   });
+
             </script>
 
         </div>
