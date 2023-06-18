@@ -48,7 +48,7 @@
             <div id="melonInfo"></div>
 
             <script>
-                // fetch("https://www.fruityvice.com/api/fruit/Banana", {
+                // fetch("https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/strawberry", {
                 //     headers: {
                 //         "Content-Type": "application/json",
                 //         "User-Agent": "Kippensoep",
@@ -78,7 +78,8 @@
                 //     <p>Protein: ${fetchedData.nutritions.protein}g</p>
                 //     `;
                 // }
-                fetch('https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/Banana')
+
+                fetch('https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/strawberry')
   .then(response => response.json())
   .then(data => {
     // Process the received data
