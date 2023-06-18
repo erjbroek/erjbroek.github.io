@@ -83,6 +83,8 @@
   .then(response => response.json())
   .then(data => {
     // Process the received data
+    fetchedData = data; // Store the fetched data in a global variable
+    melon(); // Call the melon() function after the data is fetched
     console.log(data);
   })
   .catch(error => {
