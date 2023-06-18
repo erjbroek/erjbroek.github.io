@@ -2,7 +2,7 @@
     position: relative;
     bottom: 8px;
     width: 70vw;
-    height: 62vw;
+    height: 93vh;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -34,8 +34,8 @@
 }
 
 .melonHitbox {
-    width: 9.375vw;
-    height: 9.375vw;
+    width: 14.375vw;
+    height: 14.375vw;
     position: absolute;
     left: 4.88281vw;
     bottom: 8.51562vw;
@@ -77,7 +77,7 @@
     position: absolute;
     top: 22.03542vw;
     width: 26.4vw;
-    height: 368px;
+    height: 23,9568vw;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3335084033613446) 47%, rgba(255,255,255,0.2046568627450981) 100%);
     bottom: 1.95312vw;
@@ -185,6 +185,7 @@
     top: 4vw;
     display: inline-block;
     font-family: "Century Gothic";
+    font-size: 5vw;
 }
 
 .melonPerSec {

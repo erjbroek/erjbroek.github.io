@@ -99,7 +99,7 @@ function numberToDisplay(prijs, prijsDisplay, buildingPrice, buildingCount, buil
 let clickingPower = 1;
 function clickMelon() {
   melons += clickingPower;
-  melonAmount.innerHTML = melons;
+  melonAmount.innerHTML = `${melons} . melons`;
   audio.currentTime = 0;
   const origAudio = document.getElementById("clickSound")
     const newAudio = origAudio.cloneNode()
@@ -128,11 +128,11 @@ function task(i) {
     const milDecimal = Math.floor((kMelon % 1000) / 100);
     const milMelon = Math.floor(kMelon / 1000);
     if (melons > 1000 && melons <= 1000000) {
-      melonAmount.innerHTML = kMelon + "," + kDecimal + "K";
+      melonAmount.innerHTML = kMelon + "," + kDecimal + "K" + " melons";
     } else if (kMelon > 1000) {
-      melonAmount.innerHTML = milMelon + "," + milDecimal + "Mil";
+      melonAmount.innerHTML = milMelon + "," + milDecimal + "Mil" + " melons";
     } else {
-      melonAmount.innerHTML = `${floorMelons}`;
+      melonAmount.innerHTML = `${floorMelons}` + " melons";
     }
   }, (1000 * i) / secondDivider);
   
