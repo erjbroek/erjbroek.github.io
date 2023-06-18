@@ -62,35 +62,34 @@
                 //         melon(); // Call the melon() function after the data is fetched
                 //     })
                 //     .catch((e) => console.log(e));
-
-                // function melon() {
-                //     const melonData = document.getElementById('melonData');
-                //     melonData.innerHTML = `
-                //     <h2>${fetchedData.name} test</h2>
-                //     <p>Family: ${fetchedData.family}</p>
-                //     <p>Order: ${fetchedData.order}</p>
-                //     <p>Genus: ${fetchedData.genus}</p>
-                //     <h3>Nutritional Information</h3>
-                //     <p>Calories: ${fetchedData.nutritions.calories}kcal</p>
-                //     <p>Fat: ${fetchedData.nutritions.fat}g</p>
-                //     <p>Sugar: ${fetchedData.nutritions.sugar}g</p>
-                //     <p>Carbohydrates: ${fetchedData.nutritions.carbohydrates}g</p>
-                //     <p>Protein: ${fetchedData.nutritions.protein}g</p>
-                //     `;
-                // }
-
                 fetch('https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/dragonfruit')
-  .then(response => response.json())
-  .then(data => {
-    // Process the received data
-    fetchedData = data; // Store the fetched data in a global variable
-    melon(); // Call the melon() function after the data is fetched
-    console.log(data);
-  })
-  .catch(error => {
-    // Handle any errors that occurred during the request
-    console.log(error);
-  });
+                    .then(response => response.json())
+                    .then(data => {
+                        // Process the received data
+                        fetchedData = data; // Store the fetched data in a global variable
+                        melon(); // Call the melon() function after the data is fetched
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        // Handle any errors that occurred during the request
+                        console.log(error);
+                    });
+
+                function melon() {
+                    const melonData = document.getElementById('melonData');
+                    melonData.innerHTML = `
+                    <h2>${fetchedData.name} test</h2>
+                    <p>Family: ${fetchedData.family}</p>
+                    <p>Order: ${fetchedData.order}</p>
+                    <p>Genus: ${fetchedData.genus}</p>
+                    <h3>Nutritional Information</h3>
+                    <p>Calories: ${fetchedData.nutritions.calories}kcal</p>
+                    <p>Fat: ${fetchedData.nutritions.fat}g</p>
+                    <p>Sugar: ${fetchedData.nutritions.sugar}g</p>
+                    <p>Carbohydrates: ${fetchedData.nutritions.carbohydrates}g</p>
+                    <p>Protein: ${fetchedData.nutritions.protein}g</p>
+                    `;
+                }
 
             </script>
 
