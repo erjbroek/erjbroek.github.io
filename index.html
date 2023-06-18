@@ -48,13 +48,13 @@
             <div id="melonInfo"></div>
 
             <script>
-                fetch("https://www.fruityvice.com/api/fruit/strawberry", {
+                fetch("https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/strawberry", {
                     headers: {
                         "Content-Type": "application/json",
                         "User-Agent": "Kippensoep",
                         "Accept": "*/*",
                     },
-                    mode: "no-cors",
+                    mode: "cors",
                 })
                     .then((response) => response.json())
                     .then((data) => {
