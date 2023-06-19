@@ -10,6 +10,7 @@
     background: linear-gradient(90deg, rgba(109,246,168,1) 0%, rgba(173,255,210,1) 100%);
     border: 5px solid rgb(172, 217, 199);
     border-radius: 20px 0px 0px 0px;
+    left: -9vw;
 }
 
 .topMenu {
@@ -284,4 +285,172 @@
   font-family: "Century Gothic";
   font-size: 1vw;
 }
+
+.apiContainer {
+    width: 20vw;
+    height: 94vh;
+    position: absolute;
+    right: 0px;
+    top: 0.4vw;
+    background: rgb(31,230,101);
+    background: linear-gradient(0deg, rgba(31,230,101,0.5551470588235294) 0%, rgba(94,237,144,1) 33%, rgba(255,255,255,0.38707983193277307) 100%);
+    border: 5px solid rgb(172, 217, 199);
+    border-radius: 20px;
+}
+
+.apiRequestContainer {
+    width: 90%;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1vw;
+    left: 0px;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    min-width: 150px;
+    min-height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: rgb(255,0,65);
+    background: linear-gradient(90deg, rgba(255,0,65,1) 0%, rgba(240,151,172,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 30px rgb(255,0,65,.65);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 5px;
+    bottom: 15%;
+    }
+  
+  button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(150px + 12px);
+    min-height: calc(50px + 12px);
+    border: 4px solid #ff8095;
+    box-shadow: 0 0 60px rgba(255,0,65,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: white;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 10px; height: 10px;
+    border-radius: 100%;
+    border: 6px solid #ff8095;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 3s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 220px;
+      height: 220px;
+      opacity: 0;
+    }
+  }
+
+#fruitInput {
+    width: 13vw;
+    height: 1.5vw;
+    border-radius: 20px;
+    background-color: white;
+    border: 3px solid rgba(255,0,65,.64);
+    padding: 3px;
+    position: relative;
+    left: 11%;
+    top: 5%;
+    margin: auto;
+}
+
+.apiDescription {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.apiTitle {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 0.8x;
+    font-weight: 700;
+}
+
+  
+#fruitData {
+    padding: 10px;
+    position: relative;
+    bottom: 40%;
+    padding-top: -10px;
+  }
+  
+  #fruitData h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  #fruitData p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  #fruitData h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  #fruitData p:last-child {
+    margin-bottom: 0;
+  }
 
