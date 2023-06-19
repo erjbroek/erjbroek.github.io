@@ -94,7 +94,8 @@
     <div class="apiContainer">
         <div class="apiRequestContainer">
             <h3 class="apiTitle">Fruit searcher</h3>
-            <p class="apiDescription">Here you can search for your favorite fruit, and find all kinds of information about it!</p>
+            <p class="apiDescription">Here you can search for your favorite fruit, and find all kinds of information
+                about it!</p>
             <input id="fruitInput" type="text" placeholder="Enter fruit name" />
             <div class="wrap">
                 <button id="submitBtn" class="button">Submit</button>
@@ -105,65 +106,65 @@
         <div id="melonData"></div>
         <div id="melonInfo"></div>
     </div>
+
+
     <script>
+        function fetchFruitData(fruitName) {
+            const url = `https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/${fruitName}`;
 
-function fetchFruitData(fruitName) {
-    const url = `https://cors-anywhere.herokuapp.com/https://www.fruityvice.com/api/fruit/${fruitName}`;
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Fruit not found');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Process the received data
+                    displayFruit(data);
+                })
+                .catch(error => {
+                    // Handle any errors that happened during the api request
+                    displayError(error.message);
+                });
+        }
 
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Fruit not found');
+        // Function to display the fruit data on the screen
+        function displayFruit(fetchedData) {
+            const fruitData = document.getElementById('fruitData');
+            fruitData.innerHTML = `
+                <h2>${fetchedData.name}</h2>
+                <p>Family: ${fetchedData.family}</p>
+                <p>Order: ${fetchedData.order}</p>
+                <p>Genus: ${fetchedData.genus}</p>
+                <h3>Nutritional Information</h3>
+                <p>Calories: ${fetchedData.nutritions.calories}kcal</p>
+                <p>Fat: ${fetchedData.nutritions.fat}g</p>
+                <p>Sugar: ${fetchedData.nutritions.sugar}g</p>
+                <p>Carbohydrates: ${fetchedData.nutritions.carbohydrates}g</p>
+                <p>Protein: ${fetchedData.nutritions.protein}g</p>`;
+        }
+
+        // Function to display the error message on the screen
+        function displayError(errorMessage) {
+            const fruitData = document.getElementById('fruitData');
+            fruitData.innerHTML = `<p>${errorMessage}</p>`;
+        }
+
+        // Event listener for the submit button
+        document.getElementById('submitBtn').addEventListener('click', () => {
+            const fruitInput = document.getElementById('fruitInput');
+            const fruitName = fruitInput.value.trim().toLowerCase();
+
+            if (fruitName) {
+                fetchFruitData(fruitName);
+            } else {
+                // Display an error message or handle empty input
+                displayError('Please enter a valid fruit name.');
             }
-            return response.json();
-        })
-        .then(data => {
-            // Process the received data
-            displayFruit(data);
-        })
-        .catch(error => {
-            // Handle any errors that occurred during the request
-            displayError(error.message);
         });
-}
-
-// Function to display the fruit data on the screen
-function displayFruit(fetchedData) {
-    const fruitData = document.getElementById('fruitData');
-    fruitData.innerHTML = `
-        <h2>${fetchedData.name}</h2>
-        <p>Family: ${fetchedData.family}</p>
-        <p>Order: ${fetchedData.order}</p>
-        <p>Genus: ${fetchedData.genus}</p>
-        <h3>Nutritional Information</h3>
-        <p>Calories: ${fetchedData.nutritions.calories}kcal</p>
-        <p>Fat: ${fetchedData.nutritions.fat}g</p>
-        <p>Sugar: ${fetchedData.nutritions.sugar}g</p>
-        <p>Carbohydrates: ${fetchedData.nutritions.carbohydrates}g</p>
-        <p>Protein: ${fetchedData.nutritions.protein}g</p>
-    `;
-}
-
-// Function to display the error message on the screen
-function displayError(errorMessage) {
-    const fruitData = document.getElementById('fruitData');
-    fruitData.innerHTML = `<p>${errorMessage}</p>`;
-}
-
-// Event listener for the submit button
-document.getElementById('submitBtn').addEventListener('click', () => {
-    const fruitInput = document.getElementById('fruitInput');
-    const fruitName = fruitInput.value.trim().toLowerCase();
-
-    if (fruitName) {
-        fetchFruitData(fruitName);
-    } else {
-        // Display an error message or handle empty input
-        displayError('Please enter a valid fruit name.');
-    }
-});
-
     </script>
+
     <script type="text/javascript" src="clickerScript.js"></script>
 </body>
 
